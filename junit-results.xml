@@ -1,6 +1,411 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="6.044523999999999">
-<testsuite name="HomePage\Homepage.spec.ts" timestamp="2024-11-22T12:18:59.176Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.868" errors="0">
-<testcase name="Home Page › Kullanıcı anasayfaya ilerler" classname="HomePage\Homepage.spec.ts" time="4.868">
+<testsuites id="" name="" tests="9" failures="4" skipped="0" errors="0" time="291.506411">
+<testsuite name="Flight\FlightSearch.spec.ts" timestamp="2024-11-22T13:43:48.855Z" hostname="chromium" tests="8" failures="4" skipped="0" time="514.464" errors="0">
+<testcase name="Search Flight Ticket › Users should search flights with id FP-01 from SHJ to CAI" classname="Flight\FlightSearch.spec.ts" time="46.071">
+<properties>
+<property name="details" value="FP-01 | Type: OW | 
+    [SHJ-CAI] |  
+    [2024-12-13 - 2024-12-20]">
+</property>
+<property name="details" value="[ADT:1 STD:0 
+    CHD:0 INF:0 ELD:0] | 
+    Class: Ekonomi  | Locale: tr | 
+    Currency: TRY | Airline :G9">
+</property>
+</properties>
+<system-out>
+<![CDATA[2024-12-13 2024-12-20
+Running test: Users should search flights with id FP-01 from SHJ to CAI
+Session Id:  1250743830
+1
+Given SMS option is already applied
+Free refund option is not visible
+Insurance option is not visible
+
+[[ATTACHMENT|..\test-results\Flight-FlightSearch-Search-6e532-th-id-FP-01-from-SHJ-to-CAI-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Search Flight Ticket › Users should search flights with id FP-02 from BAH to AUH" classname="Flight\FlightSearch.spec.ts" time="44.595">
+<properties>
+<property name="details" value="FP-02 | Type: OW | 
+    [BAH-AUH] |  
+    [2024-12-07 - 2024-12-14]">
+</property>
+<property name="details" value="[ADT:1 STD:0 
+    CHD:0 INF:0 ELD:0] | 
+    Class: Business  | Locale: tr | 
+    Currency: TRY | Airline :G9">
+</property>
+</properties>
+<system-out>
+<![CDATA[2024-12-07 2024-12-14
+Running test: Users should search flights with id FP-02 from BAH to AUH
+Session Id:  1250743829
+Given airline is not visible on list
+3
+Package menu is not visible
+
+[[ATTACHMENT|..\test-results\Flight-FlightSearch-Search-8d399-th-id-FP-02-from-BAH-to-AUH-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Search Flight Ticket › Users should search flights with id FP-03 from AYT to FRA" classname="Flight\FlightSearch.spec.ts" time="94.1">
+<properties>
+<property name="details" value="FP-03 | Type: OW | 
+    [AYT-FRA] |  
+    [2024-12-13 - 2024-12-20]">
+</property>
+<property name="details" value="[ADT:2 STD:0 
+    CHD:1 INF:0 ELD:0] | 
+    Class: Ekonomi | Locale: tr | 
+    Currency: TRY | Airline :undefined">
+</property>
+</properties>
+<failure message="FlightSearch.spec.ts:25:9 Users should search flights with id FP-03 from AYT to FRA" type="FAILURE">
+<![CDATA[  [chromium] › Flight\FlightSearch.spec.ts:25:9 › Search Flight Ticket › Users should search flights with id FP-03 from AYT to FRA › Verify price box details on the payment page 
+
+    Error: Total price should be displayed in price box
+
+    expect(received).toBeCloseTo(expected)
+
+    Expected: 13671.28
+    Received: 14053.93
+
+    Expected precision:    2
+    Expected difference: < 0.005
+    Received difference:   382.64999999999964
+
+       at ..\pages\Flight\FlightPaymentPage.ts:263
+
+      261 |         // Verify total price
+      262 |         const totalPrice = await parsePrice((await this.page.locator(".total-ticket-amount").textContent() ?? "undefined").trim());
+    > 263 |         expect.soft(priceDetails.totalPrice, "Total price should be displayed in price box").toBeCloseTo(totalPrice);
+          |                                                                                              ^
+      264 |
+      265 |         // Sum tax, service charge and SMS
+      266 |         let totalTax = 0;
+
+        at FlightPaymentPage.verifyDetailsInPriceBox (C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\pages\Flight\FlightPaymentPage.ts:263:94)
+        at C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\tests\Flight\FlightSearch.spec.ts:198:9
+        at C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\tests\Flight\FlightSearch.spec.ts:197:7
+
+    attachment #2: log (text/plain) ────────────────────────────────────────────────────────────────
+    Running test: Users should search flights with id FP-03 from AYT to FRA
+    Session Id: 1250744278
+    {
+      "price": 13669.29,
+      "favorite": false,
+      "segments": [
+        {
+          "departure": "AYT",
+          "destination": "FRA",
+          "departureDate": "2024-12-13",
+          "departureTime": "19:50",
+          "arrivalDa...
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\Flight-FlightSearch-Search-aee09-th-id-FP-03-from-AYT-to-FRA-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\Flight-FlightSearch-Search-aee09-th-id-FP-03-from-AYT-to-FRA-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[2024-12-13 2024-12-20
+Running test: Users should search flights with id FP-03 from AYT to FRA
+Session Id:  1250744278
+2
+Package menu is already chosen
+
+[[ATTACHMENT|..\test-results\Flight-FlightSearch-Search-aee09-th-id-FP-03-from-AYT-to-FRA-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Search Flight Ticket › Users should search flights with id FP-04 from RUH to DAC" classname="Flight\FlightSearch.spec.ts" time="80.439">
+<properties>
+<property name="details" value="FP-04 | Type: RT | 
+    [RUH-DAC] |  
+    [2024-12-20 - 2024-12-27]">
+</property>
+<property name="details" value="[ADT:1 STD:0 
+    CHD:0 INF:0 ELD:0] | 
+    Class: Ekonomi | Locale: tr | 
+    Currency: TRY | Airline :undefined">
+</property>
+</properties>
+<system-out>
+<![CDATA[2024-12-20 2024-12-27
+Running test: Users should search flights with id FP-04 from RUH to DAC
+Session Id:  1250744293
+3
+
+[[ATTACHMENT|..\test-results\Flight-FlightSearch-Search-b22bd-th-id-FP-04-from-RUH-to-DAC-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Search Flight Ticket › Users should search flights with id FP-05 from ESB to WAS" classname="Flight\FlightSearch.spec.ts" time="76.01">
+<properties>
+<property name="details" value="FP-05 | Type: RT | 
+    [ESB-WAS] |  
+    [2024-12-19 - 2024-12-26]">
+</property>
+<property name="details" value="[ADT:1 STD:0 
+    CHD:0 INF:0 ELD:0] | 
+    Class: Ekonomi  | Locale: tr | 
+    Currency: TRY | Airline :undefined">
+</property>
+</properties>
+<failure message="FlightSearch.spec.ts:25:9 Users should search flights with id FP-05 from ESB to WAS" type="FAILURE">
+<![CDATA[  [chromium] › Flight\FlightSearch.spec.ts:25:9 › Search Flight Ticket › Users should search flights with id FP-05 from ESB to WAS › Verify price box details on the payment page 
+
+    Error: Total price should be displayed in price box
+
+    expect(received).toBeCloseTo(expected)
+
+    Expected: 40887.24
+    Received: 41014.79
+
+    Expected precision:    2
+    Expected difference: < 0.005
+    Received difference:   127.55000000000291
+
+       at ..\pages\Flight\FlightPaymentPage.ts:263
+
+      261 |         // Verify total price
+      262 |         const totalPrice = await parsePrice((await this.page.locator(".total-ticket-amount").textContent() ?? "undefined").trim());
+    > 263 |         expect.soft(priceDetails.totalPrice, "Total price should be displayed in price box").toBeCloseTo(totalPrice);
+          |                                                                                              ^
+      264 |
+      265 |         // Sum tax, service charge and SMS
+      266 |         let totalTax = 0;
+
+        at FlightPaymentPage.verifyDetailsInPriceBox (C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\pages\Flight\FlightPaymentPage.ts:263:94)
+        at C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\tests\Flight\FlightSearch.spec.ts:198:9
+        at C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\tests\Flight\FlightSearch.spec.ts:197:7
+
+    attachment #2: log (text/plain) ────────────────────────────────────────────────────────────────
+    Running test: Users should search flights with id FP-05 from ESB to WAS
+    Session Id: 1250745237
+    {
+      "price": 28465.25,
+      "favorite": false,
+      "segments": [
+        {
+          "departure": "ESB",
+          "destination": "IAD",
+          "departureDate": "2024-12-19",
+          "departureTime": "04:25",
+          "arrivalDa...
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\Flight-FlightSearch-Search-e8f17-th-id-FP-05-from-ESB-to-WAS-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\Flight-FlightSearch-Search-e8f17-th-id-FP-05-from-ESB-to-WAS-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[2024-12-19 2024-12-26
+Running test: Users should search flights with id FP-05 from ESB to WAS
+Session Id:  1250745237
+2
+Given SMS option is already applied
+Free refund option is not visible
+Given insurance option is already applied
+
+[[ATTACHMENT|..\test-results\Flight-FlightSearch-Search-e8f17-th-id-FP-05-from-ESB-to-WAS-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Search Flight Ticket › Users should search flights with id FP-06 from ADB to SAW" classname="Flight\FlightSearch.spec.ts" time="65.869">
+<properties>
+<property name="details" value="FP-06 | Type: RT | 
+    [ADB-SAW] |  
+    [2024-12-16 - 2024-12-23]">
+</property>
+<property name="details" value="[ADT:1 STD:0 
+    CHD:0 INF:1 ELD:0] | 
+    Class: Ekonomi  | Locale: tr | 
+    Currency: TRY | Airline :undefined">
+</property>
+</properties>
+<failure message="FlightSearch.spec.ts:25:9 Users should search flights with id FP-06 from ADB to SAW" type="FAILURE">
+<![CDATA[  [chromium] › Flight\FlightSearch.spec.ts:25:9 › Search Flight Ticket › Users should search flights with id FP-06 from ADB to SAW › Verify price box details on the payment page 
+
+    Error: Total price should be displayed in price box
+
+    expect(received).toBeCloseTo(expected)
+
+    Expected: 7558.07
+    Received: 7648.07
+
+    Expected precision:    2
+    Expected difference: < 0.005
+    Received difference:   90
+
+       at ..\pages\Flight\FlightPaymentPage.ts:263
+
+      261 |         // Verify total price
+      262 |         const totalPrice = await parsePrice((await this.page.locator(".total-ticket-amount").textContent() ?? "undefined").trim());
+    > 263 |         expect.soft(priceDetails.totalPrice, "Total price should be displayed in price box").toBeCloseTo(totalPrice);
+          |                                                                                              ^
+      264 |
+      265 |         // Sum tax, service charge and SMS
+      266 |         let totalTax = 0;
+
+        at FlightPaymentPage.verifyDetailsInPriceBox (C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\pages\Flight\FlightPaymentPage.ts:263:94)
+        at C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\tests\Flight\FlightSearch.spec.ts:198:9
+        at C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\tests\Flight\FlightSearch.spec.ts:197:7
+
+    attachment #2: log (text/plain) ────────────────────────────────────────────────────────────────
+    Running test: Users should search flights with id FP-06 from ADB to SAW
+    Session Id: 1250745438
+    {
+      "price": 3946.51,
+      "favorite": false,
+      "segments": [
+        {
+          "departure": "ADB",
+          "destination": "SAW",
+          "departureDate": "2024-12-16",
+          "departureTime": "14:35",
+          "arrivalDat...
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\Flight-FlightSearch-Search-4a083-th-id-FP-06-from-ADB-to-SAW-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\Flight-FlightSearch-Search-4a083-th-id-FP-06-from-ADB-to-SAW-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[2024-12-16 2024-12-23
+Running test: Users should search flights with id FP-06 from ADB to SAW
+Session Id:  1250745438
+Local flight, passport input not found!
+Local flight, passport input not found!
+2
+Package menu is already chosen
+Given insurance option is already applied
+
+[[ATTACHMENT|..\test-results\Flight-FlightSearch-Search-4a083-th-id-FP-06-from-ADB-to-SAW-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Search Flight Ticket › Users should search flights with id FP-07 from ERZ to IST" classname="Flight\FlightSearch.spec.ts" time="39.217">
+<properties>
+<property name="details" value="FP-07 | Type: OW | 
+    [ERZ-IST] |  
+    [2024-12-10 - 2024-12-17]">
+</property>
+<property name="details" value="[ADT:1 STD:0 
+    CHD:0 INF:0 ELD:0] | 
+    Class: Business  | Locale: tr | 
+    Currency: TRY | Airline :PC">
+</property>
+</properties>
+<failure message="FlightSearch.spec.ts:25:9 Users should search flights with id FP-07 from ERZ to IST" type="FAILURE">
+<![CDATA[  [chromium] › Flight\FlightSearch.spec.ts:25:9 › Search Flight Ticket › Users should search flights with id FP-07 from ERZ to IST › Verify price box details on the payment page 
+
+    Error: Total price should be displayed in price box
+
+    expect(received).toBeCloseTo(expected)
+
+    Expected: 2942.59
+    Received: 2961.59
+
+    Expected precision:    2
+    Expected difference: < 0.005
+    Received difference:   19
+
+       at ..\pages\Flight\FlightPaymentPage.ts:263
+
+      261 |         // Verify total price
+      262 |         const totalPrice = await parsePrice((await this.page.locator(".total-ticket-amount").textContent() ?? "undefined").trim());
+    > 263 |         expect.soft(priceDetails.totalPrice, "Total price should be displayed in price box").toBeCloseTo(totalPrice);
+          |                                                                                              ^
+      264 |
+      265 |         // Sum tax, service charge and SMS
+      266 |         let totalTax = 0;
+
+        at FlightPaymentPage.verifyDetailsInPriceBox (C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\pages\Flight\FlightPaymentPage.ts:263:94)
+        at C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\tests\Flight\FlightSearch.spec.ts:198:9
+        at C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\tests\Flight\FlightSearch.spec.ts:197:7
+
+    attachment #2: log (text/plain) ────────────────────────────────────────────────────────────────
+    Running test: Users should search flights with id FP-07 from ERZ to IST
+    Session Id: 1250746043
+    {
+      "price": 2140.6,
+      "favorite": false,
+      "segments": [
+        {
+          "departure": "ERZ",
+          "destination": "SAW",
+          "departureDate": "2024-12-10",
+          "departureTime": "19:35",
+          "arrivalDate...
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\Flight-FlightSearch-Search-75b5c-th-id-FP-07-from-ERZ-to-IST-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\Flight-FlightSearch-Search-75b5c-th-id-FP-07-from-ERZ-to-IST-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[2024-12-10 2024-12-17
+Running test: Users should search flights with id FP-07 from ERZ to IST
+Session Id:  1250746043
+Local flight, passport input not found!
+1
+Package menu is already chosen
+
+[[ATTACHMENT|..\test-results\Flight-FlightSearch-Search-75b5c-th-id-FP-07-from-ERZ-to-IST-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Search Flight Ticket › Users should search flights with id FP-8 from ESB to MUC" classname="Flight\FlightSearch.spec.ts" time="68.163">
+<properties>
+<property name="details" value="FP-8 | Type: RT | 
+    [ESB-MUC] |  
+    [2024-12-10 - 2024-12-17]">
+</property>
+<property name="details" value="[ADT:1 STD:1 
+    CHD:0 INF:0 ELD:0] | 
+    Class: Ekonomi  | Locale: tr | 
+    Currency: TRY | Airline :PC">
+</property>
+</properties>
+<system-out>
+<![CDATA[2024-12-10 2024-12-17
+Running test: Users should search flights with id FP-8 from ESB to MUC
+Session Id:  1250746166
+0
+0
+Passengers do not want to choose pegasus baggage options
+Package menu is already chosen
+Given free refund option is already applied
+
+[[ATTACHMENT|..\test-results\Flight-FlightSearch-Search-c711f-ith-id-FP-8-from-ESB-to-MUC-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="HomePage\Homepage.spec.ts" timestamp="2024-11-22T13:43:48.855Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.233" errors="0">
+<testcase name="Home Page › Kullanıcı anasayfaya ilerler" classname="HomePage\Homepage.spec.ts" time="3.233">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\HomePage-Homepage-Home-Page-Kullanıcı-anasayfaya-ilerler-chromium\trace.zip]]
