@@ -1,10 +1,91 @@
-<testsuites id="" name="" tests="9" failures="4" skipped="0" errors="0" time="291.506411">
-<testsuite name="Flight\FlightSearch.spec.ts" timestamp="2024-11-22T13:43:48.855Z" hostname="chromium" tests="8" failures="4" skipped="0" time="514.464" errors="0">
-<testcase name="Search Flight Ticket › Users should search flights with id FP-01 from SHJ to CAI" classname="Flight\FlightSearch.spec.ts" time="46.071">
+<testsuites id="" name="" tests="17" failures="4" skipped="0" errors="0" time="383.71446599999996">
+<testsuite name="Ferry\FerrySearch.spec.ts" timestamp="2024-11-25T06:20:16.906Z" hostname="chromium" tests="8" failures="0" skipped="0" time="106.992" errors="0">
+<testcase name="Ferry Search › User should search ferry with ID FR-01 from Bodrum, Türkiye to Symi, Yunanistan" classname="Ferry\FerrySearch.spec.ts" time="19.37">
+<system-out>
+<![CDATA[Checking for error messages...
+Uygun sefer yok
+
+[[ATTACHMENT|..\test-results\Ferry-FerrySearch-Ferry-Se-f6361--Türkiye-to-Symi-Yunanistan-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Ferry Search › User should search ferry with ID FR-02 from Ayvalık, Türkiye to Midilli, Yunanistan" classname="Ferry\FerrySearch.spec.ts" time="12.805">
+<system-out>
+<![CDATA[Checking for error messages...
+Error message not found: Üzgünüz, seçtiğin tarihlere uygun bir feribot bileti bulamadık
+Bu tarihte sefer yok. Başka tarih seçin.
+
+[[ATTACHMENT|..\test-results\Ferry-FerrySearch-Ferry-Se-8b78d-rkiye-to-Midilli-Yunanistan-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Ferry Search › User should search ferry with ID FR-03 from Fethiye, Türkiye to Rodos, Yunanistan" classname="Ferry\FerrySearch.spec.ts" time="10.719">
+<system-out>
+<![CDATA[Checking for error messages...
+Error message not found: Üzgünüz, seçtiğin tarihlere uygun bir feribot bileti bulamadık
+Bu tarihte sefer yok. Başka tarih seçin.
+
+[[ATTACHMENT|..\test-results\Ferry-FerrySearch-Ferry-Se-d28ad-Türkiye-to-Rodos-Yunanistan-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Ferry Search › User should search ferry with ID FR-04 from Ayvalık, Türkiye to Midilli, Yunanistan" classname="Ferry\FerrySearch.spec.ts" time="16.262">
+<system-out>
+<![CDATA[Checking for error messages...
+Error message not found: Üzgünüz, seçtiğin tarihlere uygun bir feribot bileti bulamadık
+Bu tarihte sefer yok. Başka tarih seçin.
+
+[[ATTACHMENT|..\test-results\Ferry-FerrySearch-Ferry-Se-3db4d-rkiye-to-Midilli-Yunanistan-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Ferry Search › User should search ferry with ID FR-05 from Ayvalık, Türkiye to Midilli, Yunanistan" classname="Ferry\FerrySearch.spec.ts" time="10.665">
+<system-out>
+<![CDATA[Checking for error messages...
+Error message not found: Üzgünüz, seçtiğin tarihlere uygun bir feribot bileti bulamadık
+Bu tarihte sefer yok. Başka tarih seçin.
+
+[[ATTACHMENT|..\test-results\Ferry-FerrySearch-Ferry-Se-c1ae6-rkiye-to-Midilli-Yunanistan-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Ferry Search › User should search ferry with ID FR-06 from Ayvalık, Türkiye to Midilli, Yunanistan" classname="Ferry\FerrySearch.spec.ts" time="12.316">
+<system-out>
+<![CDATA[Checking for error messages...
+Error message not found: Üzgünüz, seçtiğin tarihlere uygun bir feribot bileti bulamadık
+Bu tarihte sefer yok. Başka tarih seçin.
+
+[[ATTACHMENT|..\test-results\Ferry-FerrySearch-Ferry-Se-1c629-rkiye-to-Midilli-Yunanistan-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Ferry Search › User should search ferry with ID FR-07 from Ayvalık, Türkiye to Midilli, Yunanistan" classname="Ferry\FerrySearch.spec.ts" time="10.61">
+<system-out>
+<![CDATA[Checking for error messages...
+Error message not found: Üzgünüz, seçtiğin tarihlere uygun bir feribot bileti bulamadık
+Bu tarihte sefer yok. Başka tarih seçin.
+
+[[ATTACHMENT|..\test-results\Ferry-FerrySearch-Ferry-Se-d7a21-rkiye-to-Midilli-Yunanistan-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Ferry Search › User should search ferry with ID FR-08 from Ayvalık, Türkiye to Midilli, Yunanistan" classname="Ferry\FerrySearch.spec.ts" time="14.245">
+<system-out>
+<![CDATA[Checking for error messages...
+Error message not found: Üzgünüz, seçtiğin tarihlere uygun bir feribot bileti bulamadık
+Bu tarihte sefer yok. Başka tarih seçin.
+
+[[ATTACHMENT|..\test-results\Ferry-FerrySearch-Ferry-Se-2ca37-rkiye-to-Midilli-Yunanistan-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Flight\FlightSearch.spec.ts" timestamp="2024-11-25T06:20:16.906Z" hostname="chromium" tests="8" failures="4" skipped="0" time="576.764" errors="0">
+<testcase name="Search Flight Ticket › Users should search flights with id FP-01 from SHJ to CAI" classname="Flight\FlightSearch.spec.ts" time="61.996">
 <properties>
 <property name="details" value="FP-01 | Type: OW | 
     [SHJ-CAI] |  
-    [2024-12-13 - 2024-12-20]">
+    [2024-12-14 - 2024-12-21]">
 </property>
 <property name="details" value="[ADT:1 STD:0 
     CHD:0 INF:0 ELD:0] | 
@@ -13,10 +94,9 @@
 </property>
 </properties>
 <system-out>
-<![CDATA[2024-12-13 2024-12-20
+<![CDATA[2024-12-14 2024-12-21
 Running test: Users should search flights with id FP-01 from SHJ to CAI
-Session Id:  1250743830
-1
+Session Id:  1252412941
 Given SMS option is already applied
 Free refund option is not visible
 Insurance option is not visible
@@ -25,11 +105,11 @@ Insurance option is not visible
 ]]>
 </system-out>
 </testcase>
-<testcase name="Search Flight Ticket › Users should search flights with id FP-02 from BAH to AUH" classname="Flight\FlightSearch.spec.ts" time="44.595">
+<testcase name="Search Flight Ticket › Users should search flights with id FP-02 from BAH to AUH" classname="Flight\FlightSearch.spec.ts" time="74.568">
 <properties>
 <property name="details" value="FP-02 | Type: OW | 
     [BAH-AUH] |  
-    [2024-12-07 - 2024-12-14]">
+    [2024-12-24 - 2024-12-31]">
 </property>
 <property name="details" value="[ADT:1 STD:0 
     CHD:0 INF:0 ELD:0] | 
@@ -38,22 +118,20 @@ Insurance option is not visible
 </property>
 </properties>
 <system-out>
-<![CDATA[2024-12-07 2024-12-14
+<![CDATA[2024-12-24 2024-12-31
 Running test: Users should search flights with id FP-02 from BAH to AUH
-Session Id:  1250743829
+Session Id:  1252413031
 Given airline is not visible on list
-3
-Package menu is not visible
 
 [[ATTACHMENT|..\test-results\Flight-FlightSearch-Search-8d399-th-id-FP-02-from-BAH-to-AUH-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Search Flight Ticket › Users should search flights with id FP-03 from AYT to FRA" classname="Flight\FlightSearch.spec.ts" time="94.1">
+<testcase name="Search Flight Ticket › Users should search flights with id FP-03 from AYT to FRA" classname="Flight\FlightSearch.spec.ts" time="75.713">
 <properties>
 <property name="details" value="FP-03 | Type: OW | 
     [AYT-FRA] |  
-    [2024-12-13 - 2024-12-20]">
+    [2024-12-16 - 2024-12-23]">
 </property>
 <property name="details" value="[ADT:2 STD:0 
     CHD:1 INF:0 ELD:0] | 
@@ -62,46 +140,39 @@ Package menu is not visible
 </property>
 </properties>
 <failure message="FlightSearch.spec.ts:25:9 Users should search flights with id FP-03 from AYT to FRA" type="FAILURE">
-<![CDATA[  [chromium] › Flight\FlightSearch.spec.ts:25:9 › Search Flight Ticket › Users should search flights with id FP-03 from AYT to FRA › Verify price box details on the payment page 
+<![CDATA[  [chromium] › Flight\FlightSearch.spec.ts:25:9 › Search Flight Ticket › Users should search flights with id FP-03 from AYT to FRA › Wait for the additional services page and verify the URL 
 
-    Error: Total price should be displayed in price box
+    Error: URL should contain 'ek-hizmetler', the page might not be loaded
 
-    expect(received).toBeCloseTo(expected)
+    expect(received).toContain(expected) // indexOf
 
-    Expected: 13671.28
-    Received: 14053.93
+    Expected substring: "ek-hizmetler"
+    Received string:    "https://www.turna.com/ucak-bileti/rezervasyon/1252413285-1515_1523"
 
-    Expected precision:    2
-    Expected difference: < 0.005
-    Received difference:   382.64999999999964
+      151 |       await test.step('Wait for the additional services page and verify the URL', async () => {
+      152 |         pageURL = await page.url();
+    > 153 |         expect(pageURL, "URL should contain 'ek-hizmetler', the page might not be loaded").toContain("ek-hizmetler");
+          |                                                                                            ^
+      154 |       })
+      155 |
+      156 |       await test.step('Verify total price and update priceDetais', async () => {
 
-       at ..\pages\Flight\FlightPaymentPage.ts:263
-
-      261 |         // Verify total price
-      262 |         const totalPrice = await parsePrice((await this.page.locator(".total-ticket-amount").textContent() ?? "undefined").trim());
-    > 263 |         expect.soft(priceDetails.totalPrice, "Total price should be displayed in price box").toBeCloseTo(totalPrice);
-          |                                                                                              ^
-      264 |
-      265 |         // Sum tax, service charge and SMS
-      266 |         let totalTax = 0;
-
-        at FlightPaymentPage.verifyDetailsInPriceBox (C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\pages\Flight\FlightPaymentPage.ts:263:94)
-        at C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\tests\Flight\FlightSearch.spec.ts:198:9
-        at C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\tests\Flight\FlightSearch.spec.ts:197:7
+        at C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\tests\Flight\FlightSearch.spec.ts:153:92
+        at C:\Users\ibrahim.yucel\projeler\turna-test\turna.test.automation\turna.test.automation\tests\Flight\FlightSearch.spec.ts:151:7
 
     attachment #2: log (text/plain) ────────────────────────────────────────────────────────────────
     Running test: Users should search flights with id FP-03 from AYT to FRA
-    Session Id: 1250744278
+    Session Id: 1252413285
     {
-      "price": 13669.29,
+      "price": 8385.87,
       "favorite": false,
       "segments": [
         {
           "departure": "AYT",
           "destination": "FRA",
-          "departureDate": "2024-12-13",
-          "departureTime": "19:50",
-          "arrivalDa...
+          "departureDate": "2024-12-16",
+          "departureTime": "11:20",
+          "arrivalDat...
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
@@ -114,17 +185,16 @@ Package menu is not visible
 ]]>
 </failure>
 <system-out>
-<![CDATA[2024-12-13 2024-12-20
+<![CDATA[2024-12-16 2024-12-23
 Running test: Users should search flights with id FP-03 from AYT to FRA
-Session Id:  1250744278
-2
+Session Id:  1252413285
 Package menu is already chosen
 
 [[ATTACHMENT|..\test-results\Flight-FlightSearch-Search-aee09-th-id-FP-03-from-AYT-to-FRA-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Search Flight Ticket › Users should search flights with id FP-04 from RUH to DAC" classname="Flight\FlightSearch.spec.ts" time="80.439">
+<testcase name="Search Flight Ticket › Users should search flights with id FP-04 from RUH to DAC" classname="Flight\FlightSearch.spec.ts" time="73.48">
 <properties>
 <property name="details" value="FP-04 | Type: RT | 
     [RUH-DAC] |  
@@ -139,18 +209,17 @@ Package menu is already chosen
 <system-out>
 <![CDATA[2024-12-20 2024-12-27
 Running test: Users should search flights with id FP-04 from RUH to DAC
-Session Id:  1250744293
-3
+Session Id:  1252413424
 
 [[ATTACHMENT|..\test-results\Flight-FlightSearch-Search-b22bd-th-id-FP-04-from-RUH-to-DAC-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Search Flight Ticket › Users should search flights with id FP-05 from ESB to WAS" classname="Flight\FlightSearch.spec.ts" time="76.01">
+<testcase name="Search Flight Ticket › Users should search flights with id FP-05 from ESB to WAS" classname="Flight\FlightSearch.spec.ts" time="70.62">
 <properties>
 <property name="details" value="FP-05 | Type: RT | 
     [ESB-WAS] |  
-    [2024-12-19 - 2024-12-26]">
+    [2024-12-11 - 2024-12-18]">
 </property>
 <property name="details" value="[ADT:1 STD:0 
     CHD:0 INF:0 ELD:0] | 
@@ -165,8 +234,8 @@ Session Id:  1250744293
 
     expect(received).toBeCloseTo(expected)
 
-    Expected: 40887.24
-    Received: 41014.79
+    Expected: 56256.28
+    Received: 56383.83
 
     Expected precision:    2
     Expected difference: < 0.005
@@ -188,16 +257,16 @@ Session Id:  1250744293
 
     attachment #2: log (text/plain) ────────────────────────────────────────────────────────────────
     Running test: Users should search flights with id FP-05 from ESB to WAS
-    Session Id: 1250745237
+    Session Id: 1252413708
     {
-      "price": 28465.25,
+      "price": 43830.29,
       "favorite": false,
       "segments": [
         {
           "departure": "ESB",
           "destination": "IAD",
-          "departureDate": "2024-12-19",
-          "departureTime": "04:25",
+          "departureDate": "2024-12-11",
+          "departureTime": "15:55",
           "arrivalDa...
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
@@ -211,10 +280,9 @@ Session Id:  1250744293
 ]]>
 </failure>
 <system-out>
-<![CDATA[2024-12-19 2024-12-26
+<![CDATA[2024-12-11 2024-12-18
 Running test: Users should search flights with id FP-05 from ESB to WAS
-Session Id:  1250745237
-2
+Session Id:  1252413708
 Given SMS option is already applied
 Free refund option is not visible
 Given insurance option is already applied
@@ -223,11 +291,11 @@ Given insurance option is already applied
 ]]>
 </system-out>
 </testcase>
-<testcase name="Search Flight Ticket › Users should search flights with id FP-06 from ADB to SAW" classname="Flight\FlightSearch.spec.ts" time="65.869">
+<testcase name="Search Flight Ticket › Users should search flights with id FP-06 from ADB to SAW" classname="Flight\FlightSearch.spec.ts" time="77.437">
 <properties>
 <property name="details" value="FP-06 | Type: RT | 
     [ADB-SAW] |  
-    [2024-12-16 - 2024-12-23]">
+    [2024-12-22 - 2024-12-29]">
 </property>
 <property name="details" value="[ADT:1 STD:0 
     CHD:0 INF:1 ELD:0] | 
@@ -242,8 +310,8 @@ Given insurance option is already applied
 
     expect(received).toBeCloseTo(expected)
 
-    Expected: 7558.07
-    Received: 7648.07
+    Expected: 5165.14
+    Received: 5255.14
 
     Expected precision:    2
     Expected difference: < 0.005
@@ -265,17 +333,17 @@ Given insurance option is already applied
 
     attachment #2: log (text/plain) ────────────────────────────────────────────────────────────────
     Running test: Users should search flights with id FP-06 from ADB to SAW
-    Session Id: 1250745438
+    Session Id: 1252413805
     {
-      "price": 3946.51,
+      "price": 4416.219999999999,
       "favorite": false,
       "segments": [
         {
           "departure": "ADB",
           "destination": "SAW",
-          "departureDate": "2024-12-16",
-          "departureTime": "14:35",
-          "arrivalDat...
+          "departureDate": "2024-12-22",
+          "departureTime": "23:00",
+          "...
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
@@ -288,12 +356,12 @@ Given insurance option is already applied
 ]]>
 </failure>
 <system-out>
-<![CDATA[2024-12-16 2024-12-23
+<![CDATA[2024-12-22 2024-12-29
 Running test: Users should search flights with id FP-06 from ADB to SAW
-Session Id:  1250745438
+Session Id:  1252413805
 Local flight, passport input not found!
 Local flight, passport input not found!
-2
+Passengers do not want to choose pegasus baggage options
 Package menu is already chosen
 Given insurance option is already applied
 
@@ -301,11 +369,11 @@ Given insurance option is already applied
 ]]>
 </system-out>
 </testcase>
-<testcase name="Search Flight Ticket › Users should search flights with id FP-07 from ERZ to IST" classname="Flight\FlightSearch.spec.ts" time="39.217">
+<testcase name="Search Flight Ticket › Users should search flights with id FP-07 from ERZ to IST" classname="Flight\FlightSearch.spec.ts" time="62.247">
 <properties>
 <property name="details" value="FP-07 | Type: OW | 
     [ERZ-IST] |  
-    [2024-12-10 - 2024-12-17]">
+    [2024-12-13 - 2024-12-20]">
 </property>
 <property name="details" value="[ADT:1 STD:0 
     CHD:0 INF:0 ELD:0] | 
@@ -320,8 +388,8 @@ Given insurance option is already applied
 
     expect(received).toBeCloseTo(expected)
 
-    Expected: 2942.59
-    Received: 2961.59
+    Expected: 2242.59
+    Received: 2261.59
 
     Expected precision:    2
     Expected difference: < 0.005
@@ -343,16 +411,16 @@ Given insurance option is already applied
 
     attachment #2: log (text/plain) ────────────────────────────────────────────────────────────────
     Running test: Users should search flights with id FP-07 from ERZ to IST
-    Session Id: 1250746043
+    Session Id: 1252414101
     {
-      "price": 2140.6,
+      "price": 1440.6,
       "favorite": false,
       "segments": [
         {
           "departure": "ERZ",
           "destination": "SAW",
-          "departureDate": "2024-12-10",
-          "departureTime": "19:35",
+          "departureDate": "2024-12-13",
+          "departureTime": "22:40",
           "arrivalDate...
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
@@ -366,22 +434,21 @@ Given insurance option is already applied
 ]]>
 </failure>
 <system-out>
-<![CDATA[2024-12-10 2024-12-17
+<![CDATA[2024-12-13 2024-12-20
 Running test: Users should search flights with id FP-07 from ERZ to IST
-Session Id:  1250746043
+Session Id:  1252414101
 Local flight, passport input not found!
-1
 Package menu is already chosen
 
 [[ATTACHMENT|..\test-results\Flight-FlightSearch-Search-75b5c-th-id-FP-07-from-ERZ-to-IST-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Search Flight Ticket › Users should search flights with id FP-8 from ESB to MUC" classname="Flight\FlightSearch.spec.ts" time="68.163">
+<testcase name="Search Flight Ticket › Users should search flights with id FP-8 from ESB to MUC" classname="Flight\FlightSearch.spec.ts" time="80.703">
 <properties>
 <property name="details" value="FP-8 | Type: RT | 
     [ESB-MUC] |  
-    [2024-12-10 - 2024-12-17]">
+    [2024-12-18 - 2024-12-25]">
 </property>
 <property name="details" value="[ADT:1 STD:1 
     CHD:0 INF:0 ELD:0] | 
@@ -390,22 +457,20 @@ Package menu is already chosen
 </property>
 </properties>
 <system-out>
-<![CDATA[2024-12-10 2024-12-17
+<![CDATA[2024-12-18 2024-12-25
 Running test: Users should search flights with id FP-8 from ESB to MUC
-Session Id:  1250746166
-0
-0
+Session Id:  1252414267
 Passengers do not want to choose pegasus baggage options
 Package menu is already chosen
-Given free refund option is already applied
+Free refund option is not visible
 
 [[ATTACHMENT|..\test-results\Flight-FlightSearch-Search-c711f-ith-id-FP-8-from-ESB-to-MUC-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="HomePage\Homepage.spec.ts" timestamp="2024-11-22T13:43:48.855Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.233" errors="0">
-<testcase name="Home Page › Kullanıcı anasayfaya ilerler" classname="HomePage\Homepage.spec.ts" time="3.233">
+<testsuite name="HomePage\Homepage.spec.ts" timestamp="2024-11-25T06:20:16.906Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.863" errors="0">
+<testcase name="Home Page › Kullanıcı anasayfaya ilerler" classname="HomePage\Homepage.spec.ts" time="2.863">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|..\test-results\HomePage-Homepage-Home-Page-Kullanıcı-anasayfaya-ilerler-chromium\trace.zip]]
